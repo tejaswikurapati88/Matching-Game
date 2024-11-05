@@ -9,6 +9,11 @@ li {
   margin-right: 20px;
   font-size: 30px;
 }
+@media (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+}
 .selec-Class {
   color: #fec653;
   border-bottom: 2px solid #fec653;

@@ -3,12 +3,12 @@ import './index.css'
 
 class TabsList extends Component {
   render() {
-    const {tabItem, selectedTab, isSelected} = this.props
+    const {tabItem, selectedTab, cat} = this.props
     const {tabId, displayText} = tabItem
     const onSelection = () => {
       selectedTab(tabId)
     }
-    const selectedClass = isSelected ? 'selec-Class' : ''
+    const selectedClass = cat === tabId ? 'selec-Class' : ''
 
     return (
       <li>

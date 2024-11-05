@@ -55,7 +55,6 @@ class Game extends Component {
     } else {
       this.setState({correctAns: false})
     }
-    console.log(number)
   }
 
   onplayAgain = () => {
@@ -83,6 +82,7 @@ class Game extends Component {
       isSelected,
       correctAns,
     } = this.state
+
     return (
       <div className="bg-container">
         <ul className="navbar-cont">
@@ -117,24 +117,22 @@ class Game extends Component {
                 {tabsList.map(eachTab => (
                   <TabsList
                     tabItem={eachTab}
-                    isSelected={isSelected}
+                    cat={thumnails[0].category}
                     selectedTab={this.selectedTab}
                     key={eachTab.tabId}
                   />
                 ))}
               </ul>
             </div>
-            <div className="thumbnail-container">
-              <ul>
-                {thumnails.map(eachThumbNail => (
-                  <ThumbsItems
-                    thumbDetails={eachThumbNail}
-                    onImages={this.onImages}
-                    key={eachThumbNail.id}
-                  />
-                ))}
-              </ul>
-            </div>
+            <ul className="thumimage-cont">
+              {thumnails.map(eachThumbNail => (
+                <ThumbsItems
+                  thumbDetails={eachThumbNail}
+                  onImages={this.onImages}
+                  key={eachThumbNail.id}
+                />
+              ))}
+            </ul>
           </div>
         ) : (
           <div className="container">

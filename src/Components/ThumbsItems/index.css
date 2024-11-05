@@ -1,4 +1,9 @@
 .thum-img {
-  height: 100px;
+  height: 150px;
   margin: 10px;
+}
+@media (max-width: 576px){
+  .thum-img{
+    height: 100px;
+  }
 }
