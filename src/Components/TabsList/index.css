@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+.text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.selec-Class {
+  color: #fec653;
+  border-bottom: 2px solid #fec653;
+}
+.btn {
+  background-color: transparent;
+  border: 0px solid;
+  cursor: pointer;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}

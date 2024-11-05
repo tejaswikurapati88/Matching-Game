@@ -1,0 +1,62 @@
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-cont {
+  background-color: #2c0e3a;
+  font-family: 'Roboto';
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+}
+.gamelogo {
+  height: 35px;
+}
+.digits {
+  color: #fec653;
+}
+.dis-img {
+  height: 20px;
+  margin-right: 10px;
+}
+.nav-sub-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 95px;
+}
+.big-img {
+  height: 400px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 700px;
+  justify-content: center;
+}
